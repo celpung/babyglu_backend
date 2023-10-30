@@ -1,0 +1,78 @@
+GET http://149.28.129.12:3001/admin/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoxLCJ1c2VybmFtZSI6MSwiZW1haWwiOjEsImlhdCI6MTY3MDIwMzE2MCwiZXhwIjoxNjcwMjA1MTYwfQ.Qtqe36FTwGWfEETE0VwC9b_TVZJBigO_Vi1f78b0Jy8
+
+###
+POST http://192.168.1.4:3000/api/auth/login
+Content-Type: application/json
+
+{"phone": "085973300332"}
+
+
+###
+GET http://192.168.1.22:3000/api/admin/nakes/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjo0LCJlbWFpbCI6NCwiaWF0IjoxNjcwNjU5NjY5LCJleHAiOjE2NzA3NDYwNjl9.Pg0dgpVHClNUrHQFdehyNgL0bl7NtP1h0YkOjwvYBgA
+
+###
+GET http://192.168.1.22:3000/api/admin/posyandu/filter_status
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjo0LCJlbWFpbCI6NCwiaWF0IjoxNjcwNjU5NjY5LCJleHAiOjE2NzA3NDYwNjl9.Pg0dgpVHClNUrHQFdehyNgL0bl7NtP1h0YkOjwvYBgA
+
+###
+GET http://192.168.1.22:3000/api/admin/nakes/filter_status
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjo0LCJlbWFpbCI6NCwiaWF0IjoxNjcwNjU5NjY5LCJleHAiOjE2NzA3NDYwNjl9.Pg0dgpVHClNUrHQFdehyNgL0bl7NtP1h0YkOjwvYBgA
+
+###
+GET http://192.168.1.22:3000/api/admin/children/filter_by_sex
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjo0LCJlbWFpbCI6NCwiaWF0IjoxNjcwNzI5NTc3LCJleHAiOjE2NzA4MTU5Nzd9.NpT888TXT56uowGbRo9tX2KuvVWPYPXs-XgLIUG-nE4
+
+###
+GET http://192.168.1.22:3000/api/admin/children/filter_by_status
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjo0LCJlbWFpbCI6NCwiaWF0IjoxNjcwNzI5NTc3LCJleHAiOjE2NzA4MTU5Nzd9.NpT888TXT56uowGbRo9tX2KuvVWPYPXs-XgLIUG-nE4
+
+###
+POST http://192.168.1.22:3000/api/admin/posyandu/update/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjo0LCJlbWFpbCI6NCwiaWF0IjoxNjcwNjU5NjY5LCJleHAiOjE2NzA3NDYwNjl9.Pg0dgpVHClNUrHQFdehyNgL0bl7NtP1h0YkOjwvYBgA
+
+{ "name": "Ada", "city": "adgmail.com", "district": "ada@gmil.com", "village": "ada@gmail.com", "address": "admail.com"}
+
+###
+POST http://192.168.1.22:3000/api/authAdmin/register
+Content-Type: application/json
+
+
+{
+    "name": "Adam",
+    "email": "adam@gmail.com",
+    "password": "123",
+    "confPassword": "123"
+}
+
+###
+GET http://192.168.1.22:3000/api/nakes/children/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoyLCJ1c2VyX2lkIjozLCJuaXAiOiIyMzc0OTIzODkwODIzOSIsInB1c2tlc21hc19pZCI6MiwiY3JlYXRlZEF0IjoiMjAyMi0xMi0xMFQxMToyMTo1NC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMi0xMi0xMFQxMToyMTo1NC4wMDBaIiwidXNlciI6eyJpZCI6MywibmFtZSI6IkJvcmQiLCJuaWsiOiIyMDkzODEyMzg5MDEyMzg5MDEiLCJwcm92aW5jZSI6InN1bWF0cmEgdXRhcmEiLCJjaXR5IjoibWVkYW4iLCJkaXN0cmljdCI6ImRmZ2RoIiwidmlsbGFnZSI6ImRmZ2ZkZyIsImFkZHJlc3MiOiJqbCBhZmRnYiIsInBvc3RhbF9jb2RlIjoiMjA5MzMiLCJwaG9uZSI6IjA4MTM2OTMyMDg2MSIsInBob3RvcyI6bnVsbCwic3RhdHVzIjoiYWN0aXZlIiwibGV2ZWwiOiJuYWtlcyIsImJpcnRoRGF5IjoiMjAyMi0xMi0wOVQwMDowMDowMC4wMDBaIiwibW90aGVyTmFtZSI6IkJvcmQiLCJqb2IiOiJjb2JvIiwiaW5jb21lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIyLTEyLTEwVDExOjA2OjQ2LjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTEyLTEwVDExOjA2OjQ2LjAwMFoifSwicHVza2VzbWFzIjp7ImlkIjoyLCJuYW1lIjoiUHVza2VtYXMgSmFtaW4gR2ludGluZyIsInBpYyI6IlZvbGllZCIsInBob25lIjoiMDg5MjgzOTQ5MjAzIiwidG90X3Bvc3lhbmR1IjoiOSIsImVtYWlsIjoiamwgamFtaW4gZ2ludGluZyIsInByb3ZpbmNlIjoic3VtYXRyYSB1dGFyYSIsImNpdHkiOiJtZWRhbiIsImRpc3RyaWN0IjoiZ3hjdiIsInZpbGxhZ2UiOiJmZHNiIiwiYWRkcmVzcyI6IkpsIEphbWluIGdpbnRpbmciLCJsYXRpdHVkZSI6IjQzOSIsImxvbmdpdHVkZSI6Ijg3IiwicG9zdGFsX2NvZGUiOiIyMDg3MSIsImNyZWF0ZWRBdCI6IjIwMjItMTItMTBUMTE6MTg6MjAuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjItMTItMTBUMTE6MTg6MjAuMDAwWiJ9fSwiaWF0IjoxNjcwNzI5MjAxfQ.q0RbZtlAZ6QY3j9Q_HNHL3c-LHvNBznSH_WIOryBxs4
+
+
+###
+GET http://192.168.100.156:3000/api/admin/vaccine/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoxLCJlbWFpbCI6MSwiaWF0IjoxNjcwNTU1NzkzLCJleHAiOjE2NzA1NTc3OTN9.Yy8Nu_PkZ_sbIa4XHMTz2niFshcPv0RRZyS4scTVqe8
+
+###
+POST http://192.168.1.22:3000/api/authAdmin/login
+Content-Type: application/json
+
+{
+    "email" : "adam@gmail.com",
+    "password" : "123"
+}
+
+###
+GET http://localhost:5000/sub_menu/gempa_bumi
+
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout

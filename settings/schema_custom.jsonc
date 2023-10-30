@@ -1,0 +1,15 @@
+{
+    "settings": {
+        "beforeAll": [],
+        "afterAll": [],
+        "engine": "mariadb",
+        "disableTriggers": false,
+        "ignoredTables": [],
+        "tablesToFill": [],
+        "maxLengthValue": 36,
+        "values": {},
+        "options": [],
+        "maxRowsPerBatch": 1000
+    },
+    "tables": []
+}
